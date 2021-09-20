@@ -1,0 +1,42 @@
+.coffeema{
+    /*display: grid;*/
+    width: 600px;
+    height: 600px;
+    background: url(https://pipla.ru/wp-content/uploads/2016/03/kofe-vidy-polza-vred-i-pravila-upotrebleniya-kofe-2.jpg) ;
+    background-size: 600px 600px;
+    
+    /*grid-template-areas:
+    "water coffee"
+    "menu";
+    grid-template-columns: 60fr 60fr;
+    grid-template-rows: 10fr 3fr;
+    gap: 200px 100px;*/
+}
+.bak {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+#coffee{
+    background-color:rgb(48, 25, 8);
+}
+#water{
+    background-color: aqua;
+}
+
+input{
+    background-color: bisque;
+    height: 60p;
+    width: 140px;
+}
+.pusto{
+    width: 0%;
+}
+.full{
+    background:azure;
+}
+.bak>.full{
+    height: 0%;
+    
+}
