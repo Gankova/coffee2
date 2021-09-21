@@ -1,6 +1,6 @@
 //const elemC = document.getElementsByClassName('coffee')[0];
 //elemC.style.backgroundColor ='#ff5577';
-volCoffe = 5;
+volCoffe = 50;
 volWater = 200;
 class Coffeema{
     
@@ -17,18 +17,20 @@ class Coffeema{
     }
     
     coffeeCup(coffee2, water2){
-        if (coffee1 < coffee2 & water1 < water2) {
-            alert("Добавьте в бак кофе и воду");
+        if (this.coffee1 < this.coffee2 & this.water1 < this.water2) {
+            alert("baki zapolnit");
         }else {
-             if (coffee1 < coffee2 & water1 >= water2) {
-               alert("Добавьте в бак кофе");
+             if (this.coffee1 < this.coffee2 & this.water1 >= this.water2) {
+               alert("coffee zapolnit");
              } else {
-                 if (coffee1 >= coffee2 & water1 < water2) {
-                     alert("Добавьте в бак воду");
+                 if (this.coffee1 >= this.coffee2 & this.water1 < this.water2) {
+                     alert("water zapolnit");
                  } else{
-                     coffee1 = coffee1-coffee2;
-                     water1 = water1 - water2;
-                     alert("Кофе готов");
+                    this.coffee1 = this.coffee1-this.coffee2;
+                    this.water1 = this.water1 - this.water2;
+                     alert("coffe please");
+                     console.log(this.coffee1);
+                     console.log(this.water1)
                  }
                 }
             }
@@ -44,16 +46,18 @@ class Coffeema{
     }
     fillWater(){
         this.water1 = volWater;
-        alert("Бак с водой заполнен");
+        alert("water full");
+        console.log(this.water1)
     }
     fillCoffee(){
         this.coffee1 = volCoffe;
-        alert("Бак с кофе заполнен");
+        alert("coffe full");
+        console.log(this.coffee1);
     }
 
 }
-const americano = new Coffeema;
-americano.coffeeCup(5,20);
+const americano = new Coffeema(5,20);
+
 
 
 
